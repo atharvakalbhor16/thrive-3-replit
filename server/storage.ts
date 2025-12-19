@@ -2,8 +2,12 @@ import {
   users, products, cartItems, orders, orderItems, wishlistItems, reviews,
   type User, type InsertUser, type Product, type CartItem, type Order, type OrderItem, type WishlistItem, type Review 
 } from "@shared/schema";
-import { db } from "./db";
+import { db, pool } from "./db";
 import { eq, ilike, desc, asc, and, inArray } from "drizzle-orm";
+import connectPgSimple from "connect-pg-simple";
+import session from "express-session";
+
+const PgSession = connectPgSimple(session);
 
 export interface IStorage {
   // Users
@@ -178,6 +182,13 @@ export class DatabaseStorage implements IStorage {
       return true; // added
     }
   }
+
+  // Session store for authentication
+  sessionStore = new PgSession({
+    pool: pool as any,
+    tableName: 'session',
+    createTableIfMissing: true,
+  });
 }
 
 export const storage = new DatabaseStorage();

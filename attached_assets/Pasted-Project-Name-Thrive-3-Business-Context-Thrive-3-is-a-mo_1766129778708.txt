@@ -1,0 +1,302 @@
+Project Name
+
+Thrive 3
+
+Business Context
+
+Thrive 3 is a modern fashion and streetwear e-commerce brand selling clothing and accessories across multiple categories and sizes. The platform must be conversion-focused, scalable, and ready for backend, database, and logistics integrations.
+
+Tech Stack (Preferred)
+
+Framework: Next.js (latest, App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS
+
+Animations: Framer Motion
+
+State Management: Context / Zustand / Redux Toolkit (choose best fit)
+
+Backend Readiness: API routes or server actions
+
+Database Ready: Schema-friendly architecture (Prisma-compatible)
+
+Auth: Login / Signup (JWT / session-ready structure)
+
+SEO: Server-side rendering, metadata, structured data
+
+Design & Brand Direction
+Visual Identity
+
+Premium, urban, streetwear aesthetic
+
+High contrast (dark mode first, light mode optional)
+
+Large typography, breathable spacing
+
+Strong product imagery focus
+
+Minimal distractions
+
+Brand References
+
+Snitch
+
+Urban Monkey
+
+Bewakoof
+
+The Souled Store
+
+Product Catalog (Must Be Fully Modeled)
+
+Categories:
+
+T-Shirts
+
+Shirts
+
+Joggers
+
+Trousers
+
+Sweatshirts & Hoodies
+
+Sweaters
+
+Jackets
+
+Jeans
+
+Cargo Pants
+
+Overshirts
+
+Accessories
+
+Belts
+
+Sunglasses
+
+Product attributes:
+
+Multiple images
+
+Sizes (XS–XXL)
+
+Color variants
+
+Price & discount price
+
+Stock status
+
+Category & tags
+
+Short & long descriptions
+
+Conversion-Optimized UI Requirements
+Global Conversion Principles
+
+Sticky navigation
+
+Persistent cart icon with item count
+
+Minimal steps to checkout
+
+Strong CTAs (Shop Now, Buy Now, Add to Cart)
+
+Trust signals (delivery info, return policy, secure checkout UI)
+
+Clear pricing & discounts
+
+Fast perceived performance
+
+Core Pages & Features
+1. Home Page (High Conversion)
+
+Hero banner with lifestyle imagery
+
+Clear brand value proposition
+
+Featured & trending products
+
+Category quick-access cards
+
+Limited-time offers / banners
+
+Social proof section (reviews placeholders)
+
+Email signup CTA
+
+2. Product Listing Page (PLP)
+
+SEO-friendly category pages
+
+Filters:
+
+Size
+
+Price range
+
+Category
+
+Color
+
+Sorting:
+
+Popularity
+
+Price (low → high)
+
+New arrivals
+
+Infinite scroll or pagination
+
+Hover quick-add to cart
+
+3. Product Detail Page (PDP) — Conversion Critical
+
+Large image gallery with zoom
+
+Price with discount highlighting
+
+Size selector with availability
+
+“Add to Cart” & “Buy Now”
+
+Delivery & return info
+
+Estimated delivery date
+
+Related products
+
+Sticky mobile CTA
+
+4. Cart Page
+
+Editable cart (size, quantity)
+
+Price breakdown
+
+Promo code input
+
+Estimated delivery
+
+Clear checkout CTA
+
+5. Checkout Flow (UI + Backend-Ready)
+
+Address management UI
+
+Delivery options UI
+
+Order summary
+
+Payment placeholder (gateway ready)
+
+Confirmation screen
+
+6. Authentication
+
+Login
+
+Signup
+
+Forgot password
+
+Session-aware navbar
+
+User profile dropdown
+
+7. User Account Area
+
+Profile details
+
+Order history UI
+
+Saved addresses
+
+Wishlist
+
+Logout
+
+8. Wishlist (Conversion Booster)
+
+Add/remove products
+
+Move to cart
+
+Persistent storage ready
+
+9. Search & Discovery
+
+Global search bar
+
+Autocomplete suggestions
+
+Popular searches
+
+Recent views
+
+10. Admin / Backend Readiness
+
+Clean API layer
+
+Modular services
+
+Product, Order, User schema-ready
+
+Easy DB integration later (Prisma / Mongo / PostgreSQL)
+
+UX Enhancements
+
+Skeleton loaders
+
+Micro-interactions
+
+Framer Motion transitions
+
+Toast notifications
+
+Error & empty states
+
+SEO & Performance
+
+Metadata per page
+
+Open Graph tags
+
+Image optimization
+
+Lazy loading
+
+Lighthouse-optimized structure
+
+Folder Structure Expectation
+app/
+  (auth)/
+  products/
+  product/[slug]/
+  cart/
+  checkout/
+  account/
+  api/
+components/
+lib/
+hooks/
+store/
+styles/
+public/
+
+Output Expectations
+
+Clean, scalable codebase
+
+Conversion-optimized UI
+
+Backend & DB friendly architecture
+
+Production-ready design
+
+Easy future integrations (payments, logistics, analytics)
